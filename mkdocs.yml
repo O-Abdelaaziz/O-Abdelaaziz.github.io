@@ -1,0 +1,163 @@
+# Project information
+site_name: Ouakala Abdelaaziz
+site_description: An Personal Documentation Website For A Web Developement.
+site_author: Ouakala Abdelaaziz
+site_url: https://O-Abdelaaziz.github.io
+
+# Repository
+repo_name: O-Abdelaaziz.github.io
+repo_url: https://github.com/O-Abdelaaziz/O-Abdelaaziz.github.io
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+      # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # Automatically hide the header
+    - header.autohide
+    # Instant loading
+    - navigation.instant
+    # Progress indicator
+    - navigation.instant.progress
+    # Anchor tracking
+    - navigation.tracking
+    # Navigation tabs
+    - navigation.tabs
+    # Navigation tabs sticky
+    - navigation.tabs.sticky
+    # Navigation sections
+    - navigation.sections
+    # Navigation expand
+    - navigation.expand
+    # Navigation bath breadcrumbs
+    #- navigation.path
+    # Navigation Indexes
+    - navigation.indexes
+    # Navigation top
+    - navigation.top
+    # Navigation footer
+    - navigation.footer
+    # Content edit
+    #- content.action.edit
+    # Content view
+    #- content.action.view
+    # Code copy
+    - content.code.copy
+    # Code select
+    #- content.code.select
+    # Code annotate
+    - content.code.annotate
+    # Tabs
+    - content.tabs.link
+    # Tooltips
+    - content.tooltips
+    # Anchor following
+    - toc.follow
+    # Navigation integration(rendered as part of the navigation sidebar)
+    #- toc.integrate
+    # Search
+    - search.suggest
+    # Search highlight
+    - search.highlight
+    # Search share
+    - search.share
+    - announce.dismiss
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog/index.md
+
+# Plugins
+plugins:
+  - blog:
+      authors: true
+  - tags
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+# Markdown extensions
+markdown_extensions:
+  # Tooltips
+  - footnotes
+  # Tables
+  - tables
+  # Syntax highlighting for Code Blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Text formatting    
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  # Arithmatex
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all   
+  # Grid columns
+  - attr_list
+  - md_in_html
+  # Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Lists    
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # Tooltips
+  - abbr
+  # Admonitions(boxes)
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true  
+      
+
+# Additional Configuration
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/abdelaaziz-ouakala/
+    - icon: fontawesome/brands/github
+      link: https://github.com/O-Abdelaaziz  
+    - icon: fontawesome/brands/wordpress
+      link: http://ouakala-abdelaaziz.epizy.com/
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/c/OuakalaAbdelaaziz
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/ouakala_abdelaaziz/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:mr.abdelaaziz.ouakala@gmail.com
+
+# Copyright
+copyright: Copyright &copy; 2024 Ouakala Abdelaaziz
